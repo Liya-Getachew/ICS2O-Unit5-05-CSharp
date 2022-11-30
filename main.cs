@@ -38,14 +38,14 @@ class Program
 
         if (sumOfAngles == 180)
         {
-            if (sideA == sideB &&  sideB == sideC && sideC == sideA)
+            if (sideA == sideB && sideB == sideC && sideC == sideA)
             {
                 Console.WriteLine("Your triangle is Equilateral.");
-            } 
+            }
              else if (sideA == sideB || sideB == sideC || sideC == sideA)
             {
-                 Console.WriteLine("Your triangle is Isosceles.");
-            } 
+                Console.WriteLine("Your triangle is Isosceles.");
+            }
             else
             {
                 Console.WriteLine("Your triangle is Scalene.");
