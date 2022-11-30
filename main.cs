@@ -36,15 +36,23 @@ class Program
 
         double sumOfAngles = Math.Round(angleA, 2) + Math.Round(angleB, 2) + Math.Round(angleC, 2);
 
-        if (sumOfAngles == 180) {
-          if (sideA == sideB &&  sideB == sideC && sideC == sideA) {
+        if (sumOfAngles == 180)
+        {
+          if (sideA == sideB &&  sideB == sideC && sideC == sideA)
+          {
              Console.WriteLine("Your triangle is Equilateral.");
-          } else if (sideA == sideB || sideB == sideC || sideC == sideA) {
+          } 
+          else if (sideA == sideB || sideB == sideC || sideC == sideA)
+          {
               Console.WriteLine("Your triangle is Isosceles.");
-          } else {
-             Console.WriteLine("Your triangle is Scalene.");
-            }
-        } else {
+          } 
+          else
+          {
+              Console.WriteLine("Your triangle is Scalene.");
+          }
+        } 
+        else
+        {
            Console.WriteLine("That's no triangle.");
         }
         Console.WriteLine("\nDone.");
