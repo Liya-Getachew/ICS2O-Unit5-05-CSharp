@@ -29,8 +29,7 @@ class Program
         sideC = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
 
-      double angleA = Math.Acos((Math.Pow(sideB, 2) + Math.Pow(sideC, 2) - Math.Pow(sideA, 2)) / (2 * sideB * sideC)) *
-    (180 / Math.PI);
+        double angleA = Math.Acos((Math.Pow(sideB, 2) + Math.Pow(sideC, 2) - Math.Pow(sideA, 2)) / (2 * sideB * sideC)) * (180 / Math.PI);
         double angleB = Math.Acos((Math.Pow(sideC, 2) + Math.Pow(sideA, 2) - Math.Pow(sideB, 2)) / (2 * sideC * sideA)) * (180 / Math.PI);
         double angleC =
     Math.Acos((Math.Pow(sideA, 2) + Math.Pow(sideB, 2) - Math.Pow(sideC, 2)) / (2 * sideA * sideB)) * (180 / Math.PI);
@@ -38,15 +37,15 @@ class Program
         double sumOfAngles = Math.Round(angleA, 2) + Math.Round(angleB, 2) + Math.Round(angleC, 2);
 
         if (sumOfAngles == 180) {
-          if (sideA == sideB && sideB == sideC && sideC == sideA) {
-              Console.WriteLine("Your triangle is Equilateral.");
+          if (sideA == sideB &&  sideB == sideC && sideC == sideA) {
+             Console.WriteLine("Your triangle is Equilateral.");
           } else if (sideA == sideB || sideB == sideC || sideC == sideA) {
               Console.WriteLine("Your triangle is Isosceles.");
           } else {
-              Console.WriteLine("Your triangle is Scalene.");
-          }
+             Console.WriteLine("Your triangle is Scalene.");
+            }
         } else {
-            Console.WriteLine("That's no triangle.");
+           Console.WriteLine("That's no triangle.");
         }
         Console.WriteLine("\nDone.");
     }
