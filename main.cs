@@ -42,7 +42,7 @@ class Program
             {
                 Console.WriteLine("Your triangle is Equilateral.");
             }
-             else if (sideA == sideB || sideB == sideC || sideC == sideA)
+            else if (sideA == sideB || sideB == sideC || sideC == sideA)
             {
                 Console.WriteLine("Your triangle is Isosceles.");
             }
